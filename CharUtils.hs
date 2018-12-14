@@ -12,3 +12,6 @@ module CharUtils where
 
     toUpper' :: Char -> Char
     toUpper' x = chr (ord x + ord 'A' - ord 'a')
+
+    digits' :: String -> String
+    digits' str = [ch | ch <- str, isDigit ch]

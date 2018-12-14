@@ -63,3 +63,6 @@ sumofsq x y = sqx + sqy
 
         sqr :: Int -> Int
         sqr x = x * x
+
+plus3 :: [Int] -> [Int]
+plus3 xs = map (+3) xs

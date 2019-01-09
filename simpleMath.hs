@@ -66,3 +66,9 @@ sumofsq x y = sqx + sqy
 
 plus3 :: [Int] -> [Int]
 plus3 xs = map (+3) xs
+
+oddSquareSum :: Integer
+oddSquareSum =
+    let oddSquares = filter odd $ map (^2) [1..]
+        belowLimit = takeWhile (<10000) oddSquares
+    in sum belowLimit

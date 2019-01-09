@@ -7,3 +7,6 @@ reverse'' xs = loop xs []
     where
         loop [] ys = ys
         loop (x:xs) ys = loop xs (x:ys)
+
+reverse''' :: [a] -> [a]
+reverse''' = foldl (\acc x -> x : acc) []
